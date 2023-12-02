@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Yatra" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+
+    </style>
+
+    <style name="Theme.Yatra" parent="Base.Theme.Yatra" >
+
+    </style>
+    <style name="Theme.Yatra.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Yatra.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--toolbar code-->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar" >
+
+
+        <!-- Customize the back arrow -->
+        <item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
+        <item name="android:textColorSecondary">@color/purple</item>
+        <item name="android:textSize">10dp</item>
+        <!-- Customize the title text color -->
+
+    </style>
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item> <!-- Set the desired text size -->
+        <item name="android:fontFamily">@font/poppins_regular</item> <!-- Set the desired font -->
+    </style>
+    <!--toolbar end-->
+    <!--rounded image-->
+    <style name="roundimageview" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+        <item name="background">@color/white</item>
+
+    </style>
+</resources>

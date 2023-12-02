@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="414dp"
+            android:layout_height="219dp"
+            android:src="@drawable/circle_remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/man"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/man"
+            app:layout_constraintBottom_toBottomOf="@+id/circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="@+id/circle"
+            app:layout_constraintTop_toBottomOf="@+id/circle"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+        android:id="@+id/manName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jhon"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/man"
+        app:layout_constraintStart_toStartOf="@+id/man"
+        app:layout_constraintTop_toBottomOf="@+id/man"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/purple"/>
+
+    <TextView
+        android:id="@+id/manGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="jhone@gmail.com"
+        android:textColor="@color/purple"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/manName"
+        app:layout_constraintEnd_toEndOf="@+id/manName"
+        app:layout_constraintStart_toStartOf="@+id/manName"
+        app:layout_constraintTop_toBottomOf="@+id/manName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/manName">
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/changePwd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:background="@drawable/profile"-->
+<!--            android:drawableStart="@drawable/baseline_person_24"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:drawablePadding="20dp"-->
+<!--            android:paddingStart="20dp"-->
+<!--            android:text="My Profile Edit"-->
+<!--            android:textColor="@color/purple"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="329dp"/>-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/myBooking"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/profile"
+         android:drawableStart="@drawable/booking"
+            android:textAlignment="viewStart"
+            android:drawablePadding="20dp"
+            android:paddingStart="20dp"
+            android:text="My Booking details"
+            android:textColor="@color/purple"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="329dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/profile"
+            android:drawableStart="@drawable/about"
+            android:textAlignment="viewStart"
+            android:drawablePadding="20dp"
+            android:paddingStart="20dp"
+            android:text="About Us"
+            android:textColor="@color/purple"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="329dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/contactus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/profile"
+            android:drawableStart="@drawable/contacts"
+            android:textAlignment="viewStart"
+            android:drawablePadding="20dp"
+            android:paddingStart="20dp"
+            android:text="Contact Us"
+            android:textColor="@color/purple"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="329dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custom_btn_bg"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="log out"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

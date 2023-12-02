@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="180dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="24dp"
+    android:background="@drawable/category_background">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/bikePhoto1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/popular_11" />
+
+    <TextView
+        android:id="@+id/bikeCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="KTM"
+        android:textColor="@color/purple"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@id/bikePhoto1"
+        app:layout_constraintTop_toBottomOf="@id/bikePhoto1" />
+
+    <TextView
+        android:id="@+id/bikemodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Duke 200 abs"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/purple"
+        android:textSize="6dp"
+        app:layout_constraintVertical_bias="0.30"
+        app:layout_constraintStart_toStartOf="@id/bikeCompany"
+        app:layout_constraintTop_toBottomOf="@id/bikeCompany" />
+
+    <Button
+        android:id="@+id/booknow"
+        android:layout_width="51dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/btn_booknow"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="BOOK NOW"
+        android:textColor="@color/purple"
+        android:textSize="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/bikePhoto1"
+        app:layout_constraintTop_toBottomOf="@+id/bikePhoto1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

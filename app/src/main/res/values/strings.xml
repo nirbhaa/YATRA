@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Yatra</string>
+    <string name="signup">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="rent">Rent your favorite bike from</string>
+    <string name="rent1">your smart phone </string>
+    <string name="hello">Hello Again !</string>
+    <string name="welcome"><br>Welcome back, you’ve \n</br><br>been missed !\n</br></string>
+    <string name="create">Create Account,</string>
+    <string name="sign2">Sign up to get Started!</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="recover">Recover your Yatra Password!</string>
+    <string name="recover1">RECOVER</string>
+    <string name="verify">Verification</string>
+    <string name="verify1">Check your Email to verify your account</string>
+    <string name="verify2">VERIFY</string>
+    <string name="home">Rent, ride and repeat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Uname">Hi Jhon!</string>
+    <string name="offerdescribe">Our  offer will be start from Ashadh 2080.
+Hope you all take this offer . </string>
+    <string name="aboutus">Hope this app will able to provide the good services to you.</string>
+    <string name="about">Yatra app whose aim is to provide a convenient and efficient solution for both bike rental businesses and customers. Either you are on vacation or want to take a ride around the city, bikes are promising vehicles to give you absolute freedom and fun to move around the way you want. You can simply rent a bike rather than owning it and be free from maintaining it. This app will bring simplicity and increase accessibility to the bike renting business</string>
+</resources>
